@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "6948500783",
+    "project_id": "marinamoda-567dc",
+    "storage_bucket": "marinamoda-567dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6948500783:android:2b8715feaac346421f1dda",
+        "android_client_info": {
+          "package_name": "com.marina.moda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3TYhvV41jdTW70e52K-fCT_LzBCwF8TI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
