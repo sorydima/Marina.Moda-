@@ -93,51 +93,11 @@ class _SettingsScreenState extends State<SettingsScreen>
                             ? shareAndroidAppMessge
                             : shareiOSAppMessage),
                   ),
-                  ListTile(
-                      leading:
-                          _buildIcon(Theme.of(context).colorScheme.rateUsIcon),
-                      title: _buildTitle(CustomStrings.rateUs),
-                      trailing: Icon(
-                        Icons.arrow_forward_ios_rounded,
-                        color: Theme.of(context).iconTheme.color,
-                      ),
-                      onTap: () async {
-                        if (await inAppReview.isAvailable()) {
-                          inAppReview
-                              .requestReview()
-                              .then((value) => print('==value='))
-                              .onError((error, stackTrace) => rateApp(context));
-                        }
-                      })
                 ],
               ),
             )),
       ),
     );
-  }
-
-  rateApp(BuildContext context) async {
-    if (Platform.isIOS) {
-      // for iOS phone only
-      if (await canLaunchUrl(Uri.parse(appstoreURLIos))) {
-        await launchUrl(
-          Uri.parse(appstoreURLIos),
-        );
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: const Text('Something went wrong. Please try again'),
-        ));
-      }
-    } else {
-      // android , web
-      if (await canLaunchUrl(Uri.parse(playstoreURLAndroid))) {
-        await launchUrl(Uri.parse(playstoreURLAndroid));
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: const Text('Something went wrong. Please try again'),
-        ));
-      }
-    }
   }
 
   Widget _buildIcon(String icon) {
