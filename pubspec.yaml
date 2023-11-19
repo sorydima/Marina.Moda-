@@ -23,7 +23,7 @@ dependencies:
   # lottie icons
   lottie: ^2.4.0
   # for network connectivity
-  connectivity_plus: ^4.0.1
+  connectivity_plus: ^5.0.1
   #draw svg icons
   flutter_svg: #^1.1.0
   # state management
