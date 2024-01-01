@@ -17,7 +17,7 @@ dependencies:
   firebase_dynamic_links: ^5.3.3
   firebase_in_app_messaging: ^0.7.3+3
   #to create webview  
-  flutter_inappwebview: ^5.7.2+3
+  flutter_inappwebview: ^6.0.0
   #to get theme modes set by user
   shared_preferences: ^2.1.2
   # lottie icons
