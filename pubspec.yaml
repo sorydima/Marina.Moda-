@@ -21,7 +21,7 @@ dependencies:
   #to get theme modes set by user
   shared_preferences: ^2.1.2
   # lottie icons
-  lottie: ^2.4.0
+  lottie: ^3.0.0
   # for network connectivity
   connectivity_plus: ^5.0.2
   #draw svg icons
