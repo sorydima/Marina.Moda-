@@ -13,29 +13,29 @@ dependencies:
     sdk: flutter
   firebase_core: ^2.14.0 
   firebase_messaging:  ^14.6.3
-  flutter_local_notifications: ^14.1.1
+  flutter_local_notifications: ^16.2.0
   firebase_dynamic_links: ^5.3.3
   firebase_in_app_messaging: ^0.7.3+3
   #to create webview  
-  flutter_inappwebview: ^5.7.2+3
+  flutter_inappwebview: ^6.0.0
   #to get theme modes set by user
   shared_preferences: ^2.1.2
   # lottie icons
-  lottie: ^2.4.0
+  lottie: ^3.0.0
   # for network connectivity
-  connectivity_plus: ^4.0.1
+  connectivity_plus: ^5.0.2
   #draw svg icons
   flutter_svg: #^1.1.0
   # state management
   provider: ^6.0.5
   # Google Mobile Ads 
-  google_mobile_ads: ^3.0.0 
+  google_mobile_ads: ^4.0.0 
   # share content from  Flutter app
   share_plus: ^7.0.2
   # launch web URLs
   url_launcher: ^6.1.11
   # for handling permissions for downloading tasks
-  permission_handler: ^10.3.0
+  permission_handler: ^11.1.0
   path_provider: ^2.0.15
   # to download files
   dio: ^5.2.1+1
@@ -47,7 +47,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
+  flutter_lints: ^3.0.1
 flutter:
   uses-material-design: true
   assets:
