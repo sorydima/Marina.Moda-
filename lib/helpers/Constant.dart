@@ -33,9 +33,9 @@ const String playstoreURLAndroid = 'https://play.google.com/store/apps/details?i
 const String appstoreURLIos = '';
 
 //To turn on/off ads
-const bool showInterstitialAds = true;
-const bool showBannerAds = true;
-const bool showOpenAds = true;
+const bool showInterstitialAds = false;
+const bool showBannerAds = false;
+const bool showOpenAds = false;
 
 //To turn on/off display of bottom navigation bar
 const bool showBottomNavigationBar = false;
