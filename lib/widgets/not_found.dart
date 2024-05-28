@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:provider/src/provider.dart';
-import '../helpers/Strings.dart';
-import '../provider/navigationBarProvider.dart';
+import 'package:marinamoda/helpers/Strings.dart';
+import 'package:marinamoda/provider/navigationBarProvider.dart';
 
 class NotFound extends StatefulWidget {
   InAppWebViewController webViewController;
