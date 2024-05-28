@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import '../helpers/Constant.dart';
+import 'package:marinamoda/helpers/Constant.dart';
 
 class AdMobService {
   static String get bannerAdId =>
