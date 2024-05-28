@@ -7,13 +7,13 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:in_app_review/in_app_review.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../main.dart';
+import 'package:marinamoda/main.dart';
 import 'package:share_plus/share_plus.dart';
-import '../helpers/Strings.dart';
-import '../helpers/Icons.dart';
-import '../helpers/Constant.dart';
-import '../widgets/admob_service.dart';
-import '../widgets/change_theme_button_widget.dart';
+import 'package:marinamoda/helpers/Strings.dart';
+import 'package:marinamoda/helpers/Icons.dart';
+import 'package:marinamoda/helpers/Constant.dart';
+import 'package:marinamoda/widgets/admob_service.dart';
+import 'package:marinamoda/widgets/change_theme_button_widget.dart';
 import 'app_content_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
