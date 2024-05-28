@@ -11,16 +11,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:permission_handler/permission_handler.dart';
-import '../screens/settings_screen.dart';
+import 'package:marinamoda/screens/settings_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../screens/splash_screen.dart';
-import '../helpers/Constant.dart';
-import '../screens/main_screen.dart';
-import '../widgets/admob_service.dart';
-import '../provider/theme_provider.dart';
-import '../provider/navigationBarProvider.dart';
+import 'package:marinamoda/screens/splash_screen.dart';
+import 'package:marinamoda/helpers/Constant.dart';
+import 'package:marinamoda/screens/main_screen.dart';
+import 'package:marinamoda/widgets/admob_service.dart';
+import 'package:marinamoda/provider/theme_provider.dart';
+import 'package:marinamoda/provider/navigationBarProvider.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 late SharedPreferences pref;
