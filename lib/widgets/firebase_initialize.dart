@@ -6,9 +6,9 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import '../helpers/Constant.dart';
+import 'package:marinamoda/helpers/Constant.dart';
 
-import '../screens/main_screen.dart';
+import 'package:marinamoda/screens/main_screen.dart';
 
 @pragma('vm:entry-point')
 void onBackgroundMessageLocal(NotificationResponse message) async {
