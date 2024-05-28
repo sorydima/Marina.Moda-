@@ -8,13 +8,13 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/src/provider.dart';
 
-import '../helpers/Icons.dart';
-import '../main.dart';
-// import '../widgets/admob_service.dart';
-import '../widgets/admob_service.dart';
-import '../provider/navigationBarProvider.dart';
-import '../helpers/Constant.dart';
-import '../widgets/load_web_view.dart';
+import 'package:marinamoda/helpers/Icons.dart';
+import 'package:marinamoda/main.dart';
+// import 'package:marinamoda/widgets/admob_service.dart';
+import 'package:marinamoda/widgets/admob_service.dart';
+import 'package:marinamoda/provider/navigationBarProvider.dart';
+import 'package:marinamoda/helpers/Constant.dart';
+import 'package:marinamoda/widgets/load_web_view.dart';
 
 class HomeScreen extends StatefulWidget {
   final String url;
