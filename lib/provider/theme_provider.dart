@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../helpers/Colors.dart';
-import '../main.dart';
+import 'package:marinamoda/helpers/Colors.dart';
+import 'package:marinamoda/main.dart';
 
 class ThemeProvider extends ChangeNotifier {
   ThemeMode themeMode = ThemeMode.system;
