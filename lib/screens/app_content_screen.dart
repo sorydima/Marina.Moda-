@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import '../widgets/load_web_view.dart';
+import 'package:marinamoda/widgets/load_web_view.dart';
 
 class AppContentScreen extends StatefulWidget {
   final String title;
