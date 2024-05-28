@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/src/provider.dart';
-import '../helpers/Icons.dart';
-import '../helpers/Strings.dart';
-import '../provider/navigationBarProvider.dart';
-import '../widgets/no_internet.dart';
+import 'package:marinamoda/helpers/Icons.dart';
+import 'package:marinamoda/helpers/Strings.dart';
+import 'package:marinamoda/provider/navigationBarProvider.dart';
+import 'package:marinamoda/widgets/no_internet.dart';
 
 class NoInternetWidget extends StatefulWidget {
   const NoInternetWidget({Key? key}) : super(key: key);
