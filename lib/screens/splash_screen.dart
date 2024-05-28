@@ -3,12 +3,12 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../screens/onboarding_screen.dart';
+import 'package:marinamoda/screens/onboarding_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../helpers/Colors.dart';
-import '../helpers/Constant.dart';
-import '../helpers/Icons.dart';
-import '../main.dart';
+import 'package:marinamoda/helpers/Colors.dart';
+import 'package:marinamoda/helpers/Constant.dart';
+import 'package:marinamoda/helpers/Icons.dart';
+import 'package:marinamoda/main.dart';
 import 'main_screen.dart';
 
 class SplashScreen extends StatefulWidget {
