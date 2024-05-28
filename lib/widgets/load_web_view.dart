@@ -11,17 +11,17 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:path_provider/path_provider.dart';
-import '../main.dart';
-import '../widgets/no_internet_widget.dart';
-import '../helpers/Constant.dart';
+import 'package:marinamoda/main.dart';
+import 'package:marinamoda/widgets/no_internet_widget.dart';
+import 'package:marinamoda/helpers/Constant.dart';
 import 'package:provider/src/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:permission_handler/permission_handler.dart';
-import '../helpers/Strings.dart';
-import '../provider/navigationBarProvider.dart';
-import '../widgets/not_found.dart';
+import 'package:marinamoda/helpers/Strings.dart';
+import 'package:marinamoda/provider/navigationBarProvider.dart';
+import 'package:marinamoda/widgets/not_found.dart';
 
-import '../helpers/Colors.dart';
+import 'package:marinamoda/helpers/Colors.dart';
 import 'no_internet.dart';
 
 class LoadWebView extends StatefulWidget {
