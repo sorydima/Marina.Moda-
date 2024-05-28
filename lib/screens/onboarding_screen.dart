@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
-import '../helpers/icons.dart';
-import '../helpers/Colors.dart';
-import '../screens/main_screen.dart';
+import 'package:marinamoda/helpers/icons.dart';
+import 'package:marinamoda/helpers/Colors.dart';
+import 'package:marinamoda/screens/main_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../helpers/Constant.dart';
-import '../helpers/Strings.dart';
-import '../main.dart';
+import 'package:marinamoda/helpers/Constant.dart';
+import 'package:marinamoda/helpers/Strings.dart';
+import 'package:marinamoda/main.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
