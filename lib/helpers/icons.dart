@@ -1,4 +1,4 @@
-import '../helpers/Constant.dart';
+import 'package:marinamoda/helpers/Constant.dart';
 
 import 'package:flutter/material.dart';
 
