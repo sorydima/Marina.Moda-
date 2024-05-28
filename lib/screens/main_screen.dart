@@ -5,17 +5,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
 import 'package:marinamoda/main.dart';
-import '../helpers/Icons.dart';
-import '../helpers/Constant.dart';
-import '../helpers/Strings.dart';
-import '../widgets/GlassBoxCurve.dart';
-import '../widgets/firebase_initialize.dart';
-import '../provider/navigationBarProvider.dart';
+import 'package:marinamoda/helpers/Icons.dart';
+import 'package:marinamoda/helpers/Constant.dart';
+import 'package:marinamoda/helpers/Strings.dart';
+import 'package:marinamoda/widgets/GlassBoxCurve.dart';
+import 'package:marinamoda/widgets/firebase_initialize.dart';
+import 'package:marinamoda/provider/navigationBarProvider.dart';
 import 'package:provider/src/provider.dart';
 
-import '../screens/home_screen.dart';
-import '../widgets/admob_service.dart';
-import '../widgets/app_lifecycle_refactor.dart';
+import 'package:marinamoda/screens/home_screen.dart';
+import 'package:marinamoda/widgets/admob_service.dart';
+import 'package:marinamoda/widgets/app_lifecycle_refactor.dart';
 import 'settings_screen.dart';
 
 class MyHomePage extends StatefulWidget {
