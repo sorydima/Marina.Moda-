@@ -31,7 +31,7 @@ dependencies:
   # Google Mobile Ads 
   google_mobile_ads: ^5.0.0 
   # share content from  Flutter app
-  share_plus: ^9.0.0
+  share_plus: ^7.2.2
   # launch web URLs
   url_launcher: ^6.1.11
   # for handling permissions for downloading tasks
