@@ -9,7 +9,7 @@ PODS:
     - FirebaseDynamicLinks (~> 10.22.0)
   - Firebase/InAppMessaging (10.22.0):
     - Firebase/CoreOnly
-    - FirebaseInAppMessaging (~> 10.22.0-beta)
+    - FirebaseInAppMessaging (~> 10.22.0)
   - Firebase/Messaging (10.22.0):
     - Firebase/CoreOnly
     - FirebaseMessaging (~> 10.22.0)
@@ -38,7 +38,7 @@ PODS:
     - "GoogleUtilities/NSData+zlib (~> 7.8)"
   - FirebaseDynamicLinks (10.7.0):
     - FirebaseCore (~> 10.0)
-  - FirebaseInAppMessaging (10.7.0-beta):
+  - FirebaseInAppMessaging (10.22.0):
     - FirebaseABTesting (~> 10.0)
     - FirebaseCore (~> 10.0)
     - FirebaseInstallations (~> 10.0)
