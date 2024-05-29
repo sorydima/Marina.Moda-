@@ -18,7 +18,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:marinamoda/screens/splash_screen.dart';
 import 'package:marinamoda/helpers/Constant.dart';
 import 'package:marinamoda/screens/main_screen.dart';
-import 'package:marinamoda/widgets/admob_service.dart';
+// import 'package:marinamoda/widgets/admob_service.dart';
 import 'package:marinamoda/provider/theme_provider.dart';
 import 'package:marinamoda/provider/navigationBarProvider.dart';
 
