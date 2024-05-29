@@ -2,19 +2,19 @@ PODS:
   - connectivity_plus (0.0.1):
     - Flutter
     - ReachabilitySwift
-  - Firebase/CoreOnly (10.7.0):
-    - FirebaseCore (= 10.7.0)
-  - Firebase/DynamicLinks (10.7.0):
+  - Firebase/CoreOnly (10.22.0):
+    - FirebaseCore (= 10.22.0)
+  - Firebase/DynamicLinks (10.22.0):
     - Firebase/CoreOnly
-    - FirebaseDynamicLinks (~> 10.7.0)
-  - Firebase/InAppMessaging (10.7.0):
+    - FirebaseDynamicLinks (~> 10.22.0)
+  - Firebase/InAppMessaging (10.22.0):
     - Firebase/CoreOnly
-    - FirebaseInAppMessaging (~> 10.7.0-beta)
-  - Firebase/Messaging (10.7.0):
+    - FirebaseInAppMessaging (~> 10.22.0-beta)
+  - Firebase/Messaging (10.22.0):
     - Firebase/CoreOnly
-    - FirebaseMessaging (~> 10.7.0)
+    - FirebaseMessaging (~> 10.22.0)
   - firebase_core (2.10.0):
-    - Firebase/CoreOnly (= 10.7.0)
+    - Firebase/CoreOnly (= 10.22.0)
     - Flutter
   - firebase_dynamic_links (5.0.17):
     - Firebase/DynamicLinks (= 10.7.0)
