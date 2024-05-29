@@ -29,22 +29,22 @@ class AdMobService {
   }
 
   /// Load an AppOpenAd.
-  void loadOpenAd() {
-    AppOpenAd.load(
-      adUnitId: openAdId,
-      orientation: AppOpenAd.orientationPortrait,
-      request: const AdRequest(),
-      adLoadCallback: AppOpenAdLoadCallback(
-        onAdLoaded: (ad) {
-          _appOpenLoadTime = DateTime.now();
-          _appOpenAd = ad;
-        },
-        onAdFailedToLoad: (error) {
-          // Handle the error.
-        },
-      ),
-    );
-  }
+  // void loadOpenAd() {
+  //   AppOpenAd.load(
+  //     adUnitId: openAdId,
+  //     orientation: AppOpenAd.orientationPortrait,
+  //     request: const AdRequest(),
+  //     adLoadCallback: AppOpenAdLoadCallback(
+  //       onAdLoaded: (ad) {
+  //         _appOpenLoadTime = DateTime.now();
+  //         _appOpenAd = ad;
+  //       },
+  //       onAdFailedToLoad: (error) {
+  //         // Handle the error.
+  //       },
+  //     ),
+  //   );
+  // }
 
   /// Whether an ad is available to be shown.
   bool get isAdAvailable {
