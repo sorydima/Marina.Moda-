@@ -117,9 +117,9 @@ class _SettingsScreenState extends State<SettingsScreen>
   }
 
   void _onPressed(Widget routeName) {
-    if (showInterstitialAds) {
-      AdMobService.showInterstitialAd();
-    }
+    // if (showInterstitialAds) {
+    //   AdMobService.showInterstitialAd();
+    // }
     navigatorKey.currentState!
         .push(CupertinoPageRoute(builder: (_) => routeName));
   }
