@@ -60,14 +60,14 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     });
     FirebaseInitialize().initFirebaseState(context);
 
-  //   initDynamicLinks();
+     initDynamicLinks();
   //   if (showOpenAds == true) {
   //     AdMobService appOpenAdManager = AdMobService()..loadOpenAd();
   //     _appLifecycleReactor =
   //         AppLifecycleReactor(appOpenAdManager: appOpenAdManager);
   //     _appLifecycleReactor!.listenToAppStateChanges();
   //   }
-  // }
+   }
 
   initializeTabs() {
     if (showBottomNavigationBar) {
