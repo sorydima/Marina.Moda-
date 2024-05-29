@@ -25,7 +25,7 @@ PODS:
     - firebase_core
     - Flutter
   - firebase_messaging (14.3.0):
-    - Firebase/Messaging (= 10.7.0)
+    - Firebase/Messaging (= 10.22.0)
     - firebase_core
     - Flutter
   - FirebaseABTesting (10.9.0):
