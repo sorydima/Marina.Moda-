@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/src/provider.dart';
-import 'package:marinamoda/helpers/Icons.dart';
+import 'package:marinamoda/helpers/icons.dart';
 import 'package:marinamoda/helpers/Strings.dart';
 import 'package:marinamoda/provider/navigationBarProvider.dart';
 import 'package:marinamoda/widgets/no_internet.dart';
