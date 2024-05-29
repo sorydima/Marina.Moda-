@@ -7,7 +7,7 @@ import 'package:marinamoda/screens/onboarding_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:marinamoda/helpers/Colors.dart';
 import 'package:marinamoda/helpers/Constant.dart';
-import 'package:marinamoda/helpers/Icons.dart';
+import 'package:marinamoda/helpers/icons.dart';
 import 'package:marinamoda/main.dart';
 import 'main_screen.dart';
 
