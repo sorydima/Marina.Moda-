@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   late AnimationController onSelectedAnimation;
   late AnimationController onChangedAnimation;
   Duration animationDuration = const Duration(milliseconds: 700);
-  AppLifecycleReactor? _appLifecycleReactor;
+  // AppLifecycleReactor? _appLifecycleReactor;
   late AnimationController navigationContainerAnimationController =
       AnimationController(
           vsync: this, duration: const Duration(milliseconds: 500));
