@@ -8,7 +8,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/src/provider.dart';
 
-import 'package:marinamoda/helpers/Icons.dart';
+import 'package:marinamoda/helpers/icons.dart';
 import 'package:marinamoda/main.dart';
 // import 'package:marinamoda/widgets/admob_service.dart';
 import 'package:marinamoda/widgets/admob_service.dart';
