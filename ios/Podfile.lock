@@ -21,7 +21,7 @@ PODS:
     - firebase_core
     - Flutter
   - firebase_in_app_messaging (0.7.0-16):
-    - Firebase/InAppMessaging (= 10.7.0)
+    - Firebase/InAppMessaging (= 10.22.0)
     - firebase_core
     - Flutter
   - firebase_messaging (14.3.0):
