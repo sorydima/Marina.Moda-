@@ -14,7 +14,7 @@ import 'package:marinamoda/provider/navigationBarProvider.dart';
 import 'package:provider/src/provider.dart';
 
 import 'package:marinamoda/screens/home_screen.dart';
-import 'package:marinamoda/widgets/admob_service.dart';
+// import 'package:marinamoda/widgets/admob_service.dart';
 import 'package:marinamoda/widgets/app_lifecycle_refactor.dart';
 import 'settings_screen.dart';
 
@@ -60,14 +60,14 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     });
     FirebaseInitialize().initFirebaseState(context);
 
-    initDynamicLinks();
-    if (showOpenAds == true) {
-      AdMobService appOpenAdManager = AdMobService()..loadOpenAd();
-      _appLifecycleReactor =
-          AppLifecycleReactor(appOpenAdManager: appOpenAdManager);
-      _appLifecycleReactor!.listenToAppStateChanges();
-    }
-  }
+  //   initDynamicLinks();
+  //   if (showOpenAds == true) {
+  //     AdMobService appOpenAdManager = AdMobService()..loadOpenAd();
+  //     _appLifecycleReactor =
+  //         AppLifecycleReactor(appOpenAdManager: appOpenAdManager);
+  //     _appLifecycleReactor!.listenToAppStateChanges();
+  //   }
+  // }
 
   initializeTabs() {
     if (showBottomNavigationBar) {
