@@ -69,7 +69,7 @@ Future main() async {
       .ensureInitialized(); //when we have to communicate to flutter framework before initializing app
   pref = await SharedPreferences.getInstance();
   await Firebase.initializeApp();
-  AdMobService.initialize();
+  // AdMobService.initialize();
   await requestNotificationPermissions();
   FirebaseMessaging.onBackgroundMessage(_messageHandler);
 
