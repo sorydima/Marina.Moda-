@@ -31,9 +31,9 @@ class _SettingsScreenState extends State<SettingsScreen>
   @override
   void initState() {
     super.initState();
-    if (showInterstitialAds) {
-      AdMobService.createInterstitialAd();
-    }
+    // if (showInterstitialAds) {
+    //   AdMobService.createInterstitialAd();
+    // }
     // inAppReview.openStoreListing(
     //   appStoreId: iOSAppId,
     // );
