@@ -1,163 +1,100 @@
-// ignore_for_file: prefer_const_constructors
-
-import 'dart:async';
 import 'dart:io';
-
-import 'package:device_info_plus/device_info_plus.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:marinamoda/screens/settings_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:marinamoda/pages/homepage.dart';
+import 'package:marinamoda/pages/onboarding.dart';
+import 'package:marinamoda/provider/homepageprovider.dart';
+import 'package:marinamoda/provider/webview.dart';
+import 'package:marinamoda/utils/colors.dart';
+import 'package:marinamoda/utils/global_fuction.dart';
+import 'package:marinamoda/utils/responsible_file.dart';
+import 'utils/constants.dart';
 
-import 'package:marinamoda/screens/splash_screen.dart';
-import 'package:marinamoda/helpers/Constant.dart';
-import 'package:marinamoda/screens/main_screen.dart';
-// import 'package:marinamoda/widgets/admob_service.dart';
-import 'package:marinamoda/provider/theme_provider.dart';
-import 'package:marinamoda/provider/navigationBarProvider.dart';
+late bool isIntro = false;
+loadSharePre() async {
+  SharedPreferences prefs = await SharedPreferences.getInstance();
 
-final navigatorKey = GlobalKey<NavigatorState>();
-late SharedPreferences pref;
-Future<void> _messageHandler(RemoteMessage message) async {}
-// Create a global instance of FirebaseMessaging
-final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
-
-// Create a global instance of FlutterLocalNotificationsPlugin
-final FlutterLocalNotificationsPlugin _flutterLocalNotificationsPlugin =
-    FlutterLocalNotificationsPlugin();
-enableStoragePermision() async {
-  if (Platform.isIOS) {
-    bool permissionGiven = await Permission.storage.isGranted;
-    if (!permissionGiven) {
-      permissionGiven = (await Permission.storage.request()).isGranted;
-      return permissionGiven;
-    }
-    return permissionGiven;
-  }
-  //if it is for android
-  final deviceInfoPlugin = DeviceInfoPlugin();
-  final androidDeviceInfo = await deviceInfoPlugin.androidInfo;
-
-  if (androidDeviceInfo.version.sdkInt < 33) {
-    bool permissionGiven = await Permission.storage.isGranted;
-    if (!permissionGiven) {
-      permissionGiven = (await Permission.storage.request()).isGranted;
-      return permissionGiven;
-    }
-
-    return permissionGiven;
-  } else {
-    bool permissionGiven = await Permission.photos.isGranted;
-
-    if (!permissionGiven) {
-      permissionGiven = (await Permission.photos.request()).isGranted;
-
-      return permissionGiven;
-    }
-    return permissionGiven;
-  }
+  isIntro = (prefs.getBool('intro') ?? false);
 }
 
-Future main() async {
-  WidgetsFlutterBinding
-      .ensureInitialized(); //when we have to communicate to flutter framework before initializing app
-  pref = await SharedPreferences.getInstance();
-  await Firebase.initializeApp();
-  // AdMobService.initialize();
-  await requestNotificationPermissions();
-  FirebaseMessaging.onBackgroundMessage(_messageHandler);
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-  int counter = 0;
+  // await Permission.camera.request();
+  // await Permission.location.request();
+  // await Permission.microphone.request();
 
-  if (isStoragePermissionEnabled) {
-    await enableStoragePermision();
+  MobileAds.instance.initialize();
+  loadSharePre();
+
+  if (Platform.isAndroid) {
+    await AndroidInAppWebViewController.setWebContentsDebuggingEnabled(true);
   }
+  checkInternetConnection();
 
-  SharedPreferences.getInstance().then((prefs) {
-    prefs.setInt('counter', counter);
-    var isDarkTheme =
-        prefs.getBool("isDarkTheme") ?? ThemeMode.system == ThemeMode.dark
-            ? true
-            : false;
+  //Remove this method to stop OneSignal Debugging
+  OneSignal.shared.setLogLevel(OSLogLevel.verbose, OSLogLevel.none);
 
-    return runApp(
-      ChangeNotifierProvider<ThemeProvider>(
-        child: MyApp(),
-        create: (BuildContext context) {
-          return ThemeProvider(isDarkTheme);
-        },
-      ),
-    );
+  OneSignal.shared.setAppId(oneSignalAppId);
+
+// The promptForPushNotificationsWithUserResponse function will show the iOS push notification prompt. We recommend removing the following code and instead using an In-App Message to prompt for notification permission
+  OneSignal.shared.promptUserForPushNotificationPermission().then((accepted) {
+    debugPrint("Accepted permission: $accepted");
   });
+
+  runApp(
+    MultiProvider(providers: [
+      ChangeNotifierProvider(create: (_) => HomePageProvider()),
+      ChangeNotifierProvider(create: (_) => WebViewProvider()),
+    ], child: const MyApp()),
+  ); //only myapp
 }
 
-Future<void> requestNotificationPermissions() async {
-
-  // Request permission for iOS
-  await _firebaseMessaging.requestPermission(
-    alert: true,
-    badge: true,
-    sound: true,
-  );
-
-  // Request permission for Android
-  await _firebaseMessaging.setForegroundNotificationPresentationOptions(
-    alert: true,
-    badge: true,
-    sound: true,
-  );
-}
+// this is testing comment
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
-  State<MyApp> createState() => _MyAppState();
+  _MyApp createState() => _MyApp();
 }
 
-class _MyAppState extends State<MyApp> {
+class _MyApp extends State<MyApp> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
-      DeviceOrientation.portraitDown,
-      /* start--uncommnet  below 2 lines to enable landscape mode */
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.landscapeRight
-      /*end */
-    ]);
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider<NavigationBarProvider>(
-            create: (_) => NavigationBarProvider())
-      ],
-      child: Consumer<ThemeProvider>(builder: (context, value, child) {
+    return LayoutBuilder(builder: (context, constraints) {
+      return OrientationBuilder(builder: (context, orientation) {
+        SizeConfig().init(constraints, orientation);
+        SystemChrome.setSystemUIOverlayStyle(
+            const SystemUiOverlayStyle(statusBarColor: transparant));
         return MaterialApp(
-          title: appName,
           debugShowCheckedModeBanner: false,
-          themeMode: value.getTheme(),
-          theme: AppThemes.lightTheme,
-          darkTheme: AppThemes.darkTheme,
-          navigatorKey: navigatorKey,
-          onGenerateRoute: (RouteSettings settings) {
-            switch (settings.name) {
-              case 'settings':
-                return CupertinoPageRoute(builder: (_) => SettingsScreen());
-            }
+          title: appName,
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+          ),
+          initialRoute: introScreenOnOff
+              ? isIntro
+                  ? "/homePage"
+                  : "/onBoardingPage"
+              : "/homePage",
+          routes: {
+            "/homePage": (context) => const HomePage(),
+            "/onBoardingPage": (context) => const OnBoardingPage()
           },
-          home: showSplashScreen
-              ? SplashScreen()
-              : MyHomePage(
-                  webUrl: webinitialUrl,
-                ),
         );
-      }),
-    );
+      });
+    });
   }
 }
