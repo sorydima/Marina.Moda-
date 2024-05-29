@@ -10,7 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:marinamoda/main.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:marinamoda/helpers/Strings.dart';
-import 'package:marinamoda/helpers/Icons.dart';
+import 'package:marinamoda/helpers/icons.dart';
 import 'package:marinamoda/helpers/Constant.dart';
 import 'package:marinamoda/widgets/admob_service.dart';
 import 'package:marinamoda/widgets/change_theme_button_widget.dart';
