@@ -11,7 +11,6 @@ import 'package:provider/src/provider.dart';
 import 'package:marinamoda/helpers/icons.dart';
 import 'package:marinamoda/main.dart';
 // import 'package:marinamoda/widgets/admob_service.dart';
-import 'package:marinamoda/widgets/admob_service.dart';
 import 'package:marinamoda/provider/navigationBarProvider.dart';
 import 'package:marinamoda/helpers/Constant.dart';
 import 'package:marinamoda/widgets/load_web_view.dart';
