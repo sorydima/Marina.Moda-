@@ -17,7 +17,7 @@ PODS:
     - Firebase/CoreOnly (= 10.22.0)
     - Flutter
   - firebase_dynamic_links (5.0.17):
-    - Firebase/DynamicLinks (= 10.7.0)
+    - Firebase/DynamicLinks (= 10.22.0)
     - firebase_core
     - Flutter
   - firebase_in_app_messaging (0.7.0-16):
