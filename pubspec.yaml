@@ -1,7 +1,7 @@
 name: marinamoda
 description: 'The music industry has undergone significant transformations in recent years, thanks to the advent of technology and the digital age. Streaming services have become the primary mode of music consumption, with giants like Spotify, Apple Music, and Amazon Music dominating the market. While these platforms offer convenience and access to a vast library of music, they come with their fair share of challenges, including centralized control, unfair artist compensation, and data privacy concerns. In response to these issues, a groundbreaking solution has emerged: Marina.Moda, a decentralized music streaming service powered by artificial intelligence (AI).'
 publish_to: 'none'
-version: 1.0.3+7
+version: 1.0.3+8
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
