@@ -61,7 +61,7 @@ For assistance, please reach out to us! 👇
 
 **Dmitry Sorokin Production**
 
-- **Email:** hr@rechain.email, p2p@rechain.email, pr@rechain.email, sorydima@rechain.email, support@rechain.email, sip@rechain.email, music@rechain.email, cfa@rechain.email, anti@rechain.email, mot_cfa@rechain.email, rechainstore@rechain.email, models@rechain.email
+- **Email:** hr@rechain.email p2p@rechain.email pr@rechain.email sorydima@rechain.email support@rechain.email sip@rechain.email music@rechain.email cfa@rechain.email anti@rechain.email mot_cfa@rechain.email rechainstore@rechain.email models@rechain.email dex@rechain.email email@rechain.email musicdapp@rechain.email pitomec@rechain.email
 
 *Please allow 1 to 5 business days for a response.*
 
