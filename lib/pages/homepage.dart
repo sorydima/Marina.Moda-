@@ -151,7 +151,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     activeConnection
                         ? await webViewController!.loadUrl(
                             urlRequest:
-                                URLRequest(url: Uri.parse(object.currentUrl)),
+                                URLRequest(url: WebUri.parse(object.currentUrl)),
                           )
                         : null,
                     Future.delayed(const Duration(seconds: 5), () {
