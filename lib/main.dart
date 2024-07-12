@@ -39,14 +39,14 @@ void main() async {
   checkInternetConnection();
 
   //Remove this method to stop OneSignal Debugging
-  OneSignal.shared.setLogLevel(OSLogLevel.verbose, OSLogLevel.none);
+  // OneSignal.shared.setLogLevel(OSLogLevel.verbose, OSLogLevel.none);
 
-  OneSignal.shared.setAppId(oneSignalAppId);
+  // OneSignal.shared.setAppId(oneSignalAppId);
 
 // The promptForPushNotificationsWithUserResponse function will show the iOS push notification prompt. We recommend removing the following code and instead using an In-App Message to prompt for notification permission
-  OneSignal.shared.promptUserForPushNotificationPermission().then((accepted) {
-    debugPrint("Accepted permission: $accepted");
-  });
+  // OneSignal.shared.promptUserForPushNotificationPermission().then((accepted) {
+    // debugPrint("Accepted permission: $accepted");
+  // });
 
   runApp(
     MultiProvider(providers: [
