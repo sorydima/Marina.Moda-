@@ -38,7 +38,7 @@ dependencies:
   flex_color_picker: ^3.3.0
   dots_indicator: ^2.1.0
   flutter_launcher_icons: ^0.11.0
-  flutter_inappwebview: ^6.0.0
+  flutter_inappwebview: ^5.8.0
   flutter_app_name: ^0.1.1
   flutter_native_splash: 
   google_mobile_ads: ^4.0.0
