@@ -20,7 +20,7 @@ package="com.marina.moda">
 
     <application 
         android:name="${applicationName}"
-        android:label="Marina.Moda ® 💖♥️"
+        android:label="Marina"
         android:usesCleartextTraffic="true"
         android:requestLegacyExternalStorage="true"
         android:largeHeap="true"
