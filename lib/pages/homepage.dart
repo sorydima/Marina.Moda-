@@ -403,15 +403,15 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   Widget _bottomMenu(WebViewProvider webViewProvider) {
     return Container(
       height: Platform.isAndroid
-          ? bannerAdIs == true
-              ? bottomMenuHideShow == true
+          ? bannerAdIs == false
+              ? bottomMenuHideShow == false
                   ? 140
                   : 70
-              : bottomMenuHideShow == true
+              : bottomMenuHideShow == false
                   ? 70
                   : 0
-          : iosBannerAdIs == true
-              ? bottomMenuHideShow == true
+          : iosBannerAdIs == false
+              ? bottomMenuHideShow == false
                   ? 150
                   : 70
               : 70,
