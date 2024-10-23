@@ -1,7 +1,5 @@
 # Connect on Marina.Moda® 💖♥️
 
-[![Codemagic build status](https://api.codemagic.io/apps/655372f33c7d0522a8d63f0b/655372f33c7d0522a8d63f0a/status_badge.svg)](https://codemagic.io/apps/655372f33c7d0522a8d63f0b/655372f33c7d0522a8d63f0a/latest_build)
-
 Welcome to the revolution of music streaming! 🎶
 
 ## Marina.Moda® – Decentralized Music Streaming Redefined
@@ -47,11 +45,11 @@ For help with Flutter development, view the [online documentation](https://docs.
 
 ## About Marina.Moda® 💖♥️
 
-Marina.Moda® is a revolutionary music streaming platform powered by AI and blockchain technology. It aims to decentralize the music industry, ensuring fair artist compensation and enhanced data privacy. Explore more at [Marina.Moda](https://marina.moda).
+Marina.Moda® is a revolutionary music streaming platform powered by AI and blockchain technology. It aims to decentralize the music industry, ensuring fair artist compensation and enhanced data privacy. Explore more at [Marina.Moda](https://marina.rechain.network).
 
-## AdminMarina.Online
+## Admin Marina 
 
-Manage your music empire with ease! Visit [AdminMarina.Online](https://adminmarina.online) for a comprehensive suite of tools designed to help artists and industry professionals manage their music, collaborations, and compensation effortlessly.
+Manage your music empire with ease! Visit [Admin Marina](https://domestic.rechain.network) for a comprehensive suite of tools designed to help artists and industry professionals manage their music, collaborations, and compensation effortlessly.
 
 ---
 
@@ -61,7 +59,7 @@ For assistance, please reach out to us! 👇
 
 **Dmitry Sorokin Production**
 
-- **Email:** hr@rechain.email p2p@rechain.email pr@rechain.email sorydima@rechain.email support@rechain.email sip@rechain.email music@rechain.email cfa@rechain.email anti@rechain.email mot_cfa@rechain.email rechainstore@rechain.email models@rechain.email dex@rechain.email email@rechain.email musicdapp@rechain.email pitomec@rechain.email
+- **Email:** hr@adminmarina.ru p2p@adminmarina.ru pr@adminmarina.ru sorydima@adminmarina.ru support@adminmarina.ru sip@adminmarina.ru music@adminmarina.ru cfa@adminmarina.ru anti@adminmarina.ru mot_cfa@adminmarina.ru rechainstore@adminmarina.ru models@adminmarina.ru dex@adminmarina.ru email@adminmarina.ru musicdapp@adminmarina.ru pitomec@adminmarina.ru delus@adminmarina.ru gateway@adminmarina.ru husco@adminmarina.ru info@adminmarina.ru maring@adminmarina.ru modus@adminmarina.ru rechainnetworkhost@adminmarina.ru tanyacity@adminmarina.ru support@xn--90ao4a.tech
 
 *Please allow 1 to 5 business days for a response.*
 
@@ -73,4 +71,4 @@ By the end of 2023, Marina.Moda® surpassed 29 million downloads across Open-Sou
 
 ---
 
-Copyright © Marina.Moda ® 💖♥️ 2023-2024, All Rights Reserved. Need help? 🤔 Email us! 👇 A Dmitry Sorokin production. All rights reserved. Powered by REChain. 🪐 Copyright © 2023-2024 REChain, Inc REChain ® is a registered trademark hr@rechain.email p2p@rechain.email pr@rechain.email sorydima@rechain.email support@rechain.email sip@rechain.email music@rechain.email cfa@rechain.email anti@rechain.email mot_cfa@rechain.email rechainstore@rechain.email models@rechain.email Please allow anywhere from 1 to 5 business days for E-mail responses! 💌 Our Stats! 👀 At the end of 2023, the number of downloads from the Open-Source Places, Apple AppStore, Google Play Market, and the REChain.Store ✨ exceeded 29 million downloads. 😈 👀
+Copyright © Marina.Moda ® 💖♥️ 2023-2024, All Rights Reserved. Need help? 🤔 Email us! 👇 A Dmitry Sorokin production. All rights reserved. Powered by REChain. 🪐 Copyright © 2023-2024 REChain, Inc REChain ® is a registered trademark hr@adminmarina.ru p2p@adminmarina.ru pr@adminmarina.ru sorydima@adminmarina.ru support@adminmarina.ru sip@adminmarina.ru music@adminmarina.ru cfa@adminmarina.ru anti@adminmarina.ru mot_cfa@adminmarina.ru rechainstore@adminmarina.ru models@adminmarina.ru dex@adminmarina.ru email@adminmarina.ru musicdapp@adminmarina.ru pitomec@adminmarina.ru delus@adminmarina.ru gateway@adminmarina.ru husco@adminmarina.ru info@adminmarina.ru maring@adminmarina.ru modus@adminmarina.ru rechainnetworkhost@adminmarina.ru tanyacity@adminmarina.ru support@xn--90ao4a.tech 💌 *Please allow 1 to 5 business days for a response.* Our Stats! 👀 At the end of 2023, the number of downloads from the Open-Source Places, Apple AppStore, Google Play Market, and the REChain.Store ✨ exceeded 29 million downloads. 😈 👀
