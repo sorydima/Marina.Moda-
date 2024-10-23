@@ -1,0 +1,8 @@
+
+targets:
+  $default:
+    sources:
+      - "lib/**"
+      - "web/**"
+      - "test/**"
+      - "build/**"
