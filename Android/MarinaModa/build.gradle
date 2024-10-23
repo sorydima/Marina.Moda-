@@ -1,0 +1,23 @@
+buildscript {
+	repositories {
+		maven { url 'https://developer.huawei.com/repo/' }
+		google()
+		mavenCentral()
+	}
+    dependencies {
+    	classpath 'com.huawei.agconnect:agcp:1.5.2.300'
+        classpath 'com.android.tools.build:gradle:8.5.2'
+    }
+}
+
+allprojects {
+	repositories {
+		maven {url 'https://developer.huawei.com/repo/'}
+		google()
+		mavenCentral()
+	}
+}
+
+tasks.register('clean', Delete) {
+	delete rootProject.layout.buildDirectory
+}

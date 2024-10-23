@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdk 34
+	defaultConfig {
+		applicationId 'com.domestic.marina'
+        minSdk 21
+        targetSdk 34
+		versionCode 12
+		versionName '12'
+		testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+		multiDexEnabled true
+	}
+	buildTypes {
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+		}
+	}
+	productFlavors {
+	}
+	namespace 'sngine.app.webview'
+}
+
+dependencies {
+	implementation 'com.huawei.agconnect:agconnect-core:1.5.2.300'
+	implementation fileTree(include: ['*.jar'], dir: 'libs')
+	androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+	implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+	implementation 'androidx.appcompat:appcompat:1.7.0'
+	testImplementation 'junit:junit:4.13.2'
+	implementation 'com.google.android.gms:play-services-auth:21.2.0'
+	implementation 'com.google.android.gms:play-services-location:21.3.0'
+
+	// OneSignal SDK
+	implementation 'com.onesignal:OneSignal:[5.0.0, 5.99.99]'
+}
+
+apply plugin: 'com.huawei.agconnect'
